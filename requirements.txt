@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+sqlmodel
+alembic
+passlib
+argon2-cffi
+pyjwt
+python-dotenv
+pydantic-settings
+pymysql

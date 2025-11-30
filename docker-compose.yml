@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  api:
+    build: .
+    container_name: task_manager_api
+    volumes:
+      - ./data:/app/data  
+      - .:/app             
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite:///./app.db
+      - SECRET_KEY=f9d8K3s_7vYqR2hTn4mP0xQ8aLzU1bCw
+      - ACCESS_TOKEN_EXPIRE_MINUTES=60
+      - ALGORITHM=HS256
+      - DEFAULT_PAGE=1
+      - DEFAULT_SIZE=10
