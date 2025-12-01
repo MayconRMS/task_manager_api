@@ -12,7 +12,7 @@ API para gerenciamento de tarefas com autenticação JWT, construída em FastAPI
 - FastAPI
 - SQLModel
 - Uvicorn
-- JWT (python-jose)
+- JWT 
 - Alembic
 - SQLite (ou PostgreSQL/MySQL)
 - Docker / Docker Compose (opcional)
